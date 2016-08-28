@@ -1,6 +1,11 @@
 ### tire rotation per minute by circumference ####
 #var tire=TireSpeed.new(# of gear,diam[0],diam[1],diam[2], ...);
 
+setlistener("/sim/signals/fdm-initialized", func {
+  	itaf.ap_init();				
+	var autopilot = gui.Dialog.new("sim/gui/dialogs/autopilot/dialog", "Aircraft/Embraer-ERJ-145/Systems/autopilot-dlg.xml");
+});
+
 var TireSpeed = {
     new : func(number){
         m = { parents : [TireSpeed] };

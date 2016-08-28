@@ -19,6 +19,13 @@
       <path archive="y">Aircraft/Embraer-ERJ-145/Sounds/erj145-sound.xml</path>
     </sound>
 
+    <systems>
+    <autopilot>
+	  <name>IT-AUTOFLIGHT</name>
+      <path>Aircraft/Embraer-ERJ-145/Systems/it-autoflight.xml</path>
+    </autopilot>
+    </systems>
+
     <model>
       <path archive="y">Aircraft/Embraer-ERJ-145/Models/erj145.xml</path>
       <livery>
@@ -133,6 +140,9 @@
       <file>Aircraft/Generic/Engines/generic-yasim-engine.nas</file>
       <file>Aircraft/Embraer-ERJ-145/Nasal/engines-yasim.nas</file>
     </engines>
+	<itaf>
+      <file>Aircraft/Embraer-ERJ-145/Nasal/it-autoflight.nas</file>
+	</itaf>
   </nasal>
    
 </PropertyList>
